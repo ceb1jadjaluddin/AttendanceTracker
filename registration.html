@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;  
+            }
+        #myVideo {
+                    position: fixed;
+                    right: 0;
+                    bottom: 0;
+                    min-width: 100%; 
+                    min-height: 100%;
+         }
+         label{
+            font-weight: bold;
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="FastLogistics.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <div class="container">
+        <div class="row" style="padding-top: 30px;">
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <center>
+                    <h1 style="font-weight: bold; color:white;">
+                        Registration
+                    </h1>
+                </center>
+            </div> 
+            <div class="col-sm-4">
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4" style="background-color: rgba(0, 0, 0, 0.5);; border-radius: 1ch;">
+                    <form action="register.php" method="post">
+                        <br>
+                        <label>Firstname :</label><input type="text" class="form-control" placeholder="Enter first name" name = "firstname" required>
+                        
+                        <label>Lastname :</label><input type="text" class="form-control" placeholder="Enter last name" name = "lastname" required>
+                  
+                        <label>Department :</label><input type="text" class="form-control" placeholder="Enter department" name = "department" required>
+                   
+                        <label>Position : </label><input type="text" class="form-control" placeholder="Enter position" name = "position" required>
+           
+                        <label>Immediate head : </label><input type="text" class="form-control" placeholder="Enter head" name = "head" required> <br>
+            
+                        <center><button type="submit" class="btn btn-primary" style="margin-bottom: 10px;">Submit</button></center>
+                    </form>  
+     
+            </div> 
+            <div class="col-sm-4">
+
+            </div>
+        </div>             
+         
+    </div> 
+</body>
+</html>

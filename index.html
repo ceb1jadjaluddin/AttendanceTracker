@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+      body{
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;  
+      }
+      #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+     }
+     label{
+         color: white;
+     }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="FastLogistics.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+    <div class="container">
+        <div class="row justify-content-center"> 
+            <div class="col-xs-4 col-md-4 col-xl-4" style="background: rgba(0, 0, 0, 0.5); border-radius: 20px; margin: 100px;">
+                    <br>
+                    <center>
+                        <h1 style="font-weight: bold; color:white;" >ATTENDANCE TRACKER</h1><br><br>
+                       
+                            <form action="idcheker.php" method="POST">
+                                       
+                                            <label>Employee ID</label>
+                                            <input type="number" style="width: 187px;" name="empid" placeholder="Please enter ID #" required><br>
+
+                                            <label>Cut-off Date</label>
+                                            <input type="date" style="width: 187px; margin-left: 5px;" name="dateid" placeholder="Please enter cutoff date" required><br><br>
+
+                                            <button type="submit" class="btn btn-primary " style="width: 82px;">Check</button>&nbsp;
+                                            <button class="btn btn-primary" onclick="window.location.href='registration.html'">Register</button>
+                                        
+                            </form>
+                    </center>
+                    
+                    <br>
+            </div>
+           
+        </div>
+    </div> 
+       
+</body>
+</html>
